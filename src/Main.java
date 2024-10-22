@@ -20,7 +20,7 @@ public class Main {
 
 
         Graphics2D g2d = novaImagem.createGraphics();  //criado para poder desenhar a imagem
-        g2d.drawImage(imagem.getScaledInstance(newWidth,newHeigth,Image.SCALE_SMOOTH),0,0,null); //redimenciona para o tamanho desefinido
+        g2d.drawImage(imagem.getScaledInstance(newWidth,newHeigth,Image.SCALE_SMOOTH),0,0,null); //redimenciona para o tamanho definido
         g2d.dispose();       //Image.SCALE_SMOOTH deixa a imagem com uma qualidade "melhor"
 
         ImageIO.write(novaImagem,"jpg", new File("src/ImagensRedimencionadas/ImagemRedimencionada.jpg")); //salva uma nova imagem
